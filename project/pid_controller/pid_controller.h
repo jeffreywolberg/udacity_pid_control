@@ -11,25 +11,15 @@ class PID {
 public:
 
    /**
-   * TODO: Create the PID class
+   * Create the PID class
    **/
 
-    /*
-    * Errors
-    */
-
-    /*
-    * Coefficients
-    */
-
-    /*
-    * Output limits
-    */
+	double pid_errors[3];
+	double pid_coeffs[3];
+	double output_lim_max;
+  	double output_lim_min;
+	double delta_time;
   
-    /*
-    * Delta time
-    */
-
     /*
     * Constructor
     */
@@ -62,5 +52,3 @@ public:
 };
 
 #endif //PID_CONTROLLER_H
-
-
